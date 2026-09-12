@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Posicionamento CSS3</title>
+        <link rel="stylesheet" href="./css/posicionamento.css"/>
+    </head>
+    <body>
+
+        <h2>1. Static</h2>
+        <div class="moldura">
+            <div class="caixa">Caixa 1</div>
+            <div class="caixa">Caixa 2</div>
+        </div>
+
+        <h2>2. Relative</h2>
+        <div class="moldura moldura-rel">
+            <div class="caixa z-relativo">Normal</div>
+            <div class="caixa caixa-relativa destaque">Me movi!</div>
+            <div class="caixa">Normal</div>
+        </div>
+
+        <h2>3. Absolute</h2>
+        <div class="moldura moldura-rel">
+            <div class="caixa">Normal</div>
+            <div class="caixa">Normal</div>
+            <div class="caixa caixa-absoluto destaque">Canto ! 📍</div>
+        </div>
+
+        <h2 class="titulo-fixado">4. Fixed</h2>
+        <div class="caixa destaque caixa-fixa">
+            fixado
+        </div>
+
+        <h2>5. Z-index</h2>
+        <div class="moldura moldura-z">
+            <div class="zcaixa z1">z-index 1</div>
+            <div class="zcaixa z2">z-index 2</div>
+        </div>
+
+
+        <h2>6. Overflow</h2>
+
+        <h3>Overflow: Hidden</h3>
+        <div class="over over-hidden">
+            <p>
+                Lorem Ipsum is simply dummy text of 
+                the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's 
+                standard dummy text ever since 1966, 
+                when designers at Letraset and James Mosley, 
+                the librarian at St Bride Printing Library 
+                in London, took a 1914 Cicero translation 
+                and scrambled it to make dummy text for 
+                Letraset's Body Type sheets. 
+                It has survived not only many decades, 
+                but also the leap into electronic
+                typesetting, remaining essentially
+                unchanged. It was popularised thanks 
+                to these sheets and more recently 
+                with desktop publishing software like
+                 Aldus PageMaker and Microsoft Word 
+                 including versions of Lorem Ipsum.
+            </p>
+        </div>
+
+        <h3>Overflow: Scroll</h3>
+         <div class="over over-scroll">
+            <p>
+                Lorem Ipsum is simply dummy text of 
+                the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's 
+                standard dummy text ever since 1966, 
+                when designers at Letraset and James Mosley, 
+                the librarian at St Bride Printing Library 
+                in London, took a 1914 Cicero translation 
+                and scrambled it to make dummy text for 
+                Letraset's Body Type sheets. 
+                It has survived not only many decades, 
+                but also the leap into electronic
+                typesetting, remaining essentially
+                unchanged. It was popularised thanks 
+                to these sheets and more recently 
+                with desktop publishing software like
+                 Aldus PageMaker and Microsoft Word 
+                 including versions of Lorem Ipsum.
+            </p>
+        </div>
+
+        <h3>Overflow: Auto</h3>
+        <div class="over over-auto">
+            <p>
+                Lorem Ipsum is simply dummy text of 
+                the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's 
+                standard dummy text ever since 1966, 
+                when designers at Letraset and James Mosley, 
+                the librarian at St Bride Printing Library 
+                in London, took a 1914 Cicero translation 
+                and scrambled it to make dummy text for 
+                Letraset's Body Type sheets. 
+                It has survived not only many decades, 
+                but also the leap into electronic
+                typesetting, remaining essentially
+                unchanged. It was popularised thanks 
+                to these sheets and more recently 
+                with desktop publishing software like
+                 Aldus PageMaker and Microsoft Word 
+                 including versions of Lorem Ipsum.
+            </p>
+        </div>
+        <div class="over over-auto">
+            <p>
+                Lorem Ipsum is simply dummy text of 
+                the printing and typesetting industry. 
+            </p>
+        </div>
+
+
+        <h2>7. Float</h2>
+        <div class="moldura">
+            <img 
+            src="./img/meme-do-cachorro.avif" 
+            alt="Meme do cachorro"
+            class="float-imagem"
+            />
+            <p>
+                Lorem Ipsum is simply dummy text of 
+                the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard 
+                dummy text ever since 1966
+            </p>
+            <p>
+                Lorem Ipsum is simply dummy text of 
+                the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard 
+                dummy text ever since 1966
+            </p>
+            <p>
+                Lorem Ipsum is simply dummy text of 
+                the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard 
+                dummy text ever since 1966
+            </p>
+            <div class="limpa"></div>
+            <h3>Missão</h3>
+             <p>
+                Lorem Ipsum is simply dummy text of 
+                the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard 
+                dummy text ever since 1966
+            </p>
+        </div>
+
+        <h2>8. Display: inline-block</h2>
+        <div class="moldura">
+            <div class="ib">
+                Caixa 1
+            </div>
+            <div class="ib">
+                Caixa 2
+            </div>
+            <div class="ib">
+                Caixa 3
+            </div>
+        </div>
+
+        <h2>9. Display: block</h2>
+        <div class="moldura">
+            <span class="bloco">Bloco 1</span>
+            <span class="bloco">Bloco 2</span>
+            <span class="bloco">Bloco 3</span>
+        </div>
+
+        <h2>10. Display: inline</h2>
+        <div class="moldura">
+            Lorem Ipsum is  <span class="em-linha">Palavra 1</span>, Lorem Ipsum has been the
+            industry's 
+            <span class="em-linha">
+                Palavra 2
+            </span> e
+             <span class="em-linha">Palavra 3</span>  
+            industry. Lorem Ipsum has been the
+            industry's  standard dummy text ever
+             since 1966.
+        </div>
+
+       
+        <h2>11. Display: none</h2>
+        <div class="moldura">
+            <div class="destaque">
+                Conteúdo visível
+
+            </div>
+            <div class="escondido destaque">
+                Conteúdo escondido
+            </div>
+        </div>
+        
+
+    </body>
+</html>

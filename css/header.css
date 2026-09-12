@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    border-bottom: 3px solid black;
+    background-color: rgb(236, 233, 228);
+}
+.container-logo{
+    /* background-color: green; */
+    width:40%;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    background-color: #f26a8d;
+    border-radius: 100%;
+    display: flex;
+}
+
+
+nav{
+    width: 60%;
+    height: auto;
+}
+
+nav .menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+}
+nav .menu li{
+    border: 1px solid #f26a8d;
+    width: 75px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+nav .menu li>a{
+    text-decoration:none;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+nav .menu li:hover{
+    /* opacity: 0.5; */
+    background-color: #f26a8c85;
+}

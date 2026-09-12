@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    gap: 0px;
+    background-color: #dde5b6;
+    border: dashed 2px #723d46;
+    border-radius: 8px;
+    padding: 12px;
+    min-height: 80px;
+}
+
+/* Trabalhando com 
+justify na horizontal */
+
+.caixaf{
+    background-color: #e26d5c;
+    color: #fefae0;
+    padding: 18px;
+    border-radius: 8px;
+    font-weight:800;
+    text-align: center;
+    list-style: none;
+    width: 100px;
+    height: auto;
+}
+
+.f-centro{
+    justify-content: center;
+}
+
+.f-espaco-entre{
+    justify-content: space-between;
+}
+
+.f-espaco-ao-redor{
+    justify-content: space-around;
+}
+
+.f-espaco-ao-redor-iguais{
+    justify-content: space-evenly;
+}
+
+/* Trabalhando com 
+align items vertical */
+
+.f-vertical{
+    flex-direction: column;
+    align-items: center;
+    min-height: 230px;
+    justify-content: center;
+    gap: 2px;
+}
+.f-coluna{
+    gap: 10px;
+    flex-direction: column;
+    align-items: end;
+    min-height: 330px;
+    justify-content: center;
+}
