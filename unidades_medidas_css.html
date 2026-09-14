@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unidades de medidas</title>
+        <link rel="stylesheet" href="./css/unidades_medidas.css"/>
+    </head>
+    <body>
+        <!-- unidade absoluta -->
+
+        <h2>1. px(pixels) - a medida fixa</h2>
+        <div class="px-caixa">
+            Tenho 300px
+        </div>
+
+        <!-- Unidade relativa -->
+
+        <h2>2. %(porcentagem) - a medida relativa ao pai</h2>
+        <div class="pai-porcento">
+            <div class="filho-50">Tenho 50% do pai</div>
+            <div class="filho-80">Tenho 80% do pai</div>
+        </div>
+
+        <h2> 3. em - Relativo à fonte do elemento </h2>
+        <div class="demo">
+            <div class="caixa-em">
+                Minha font é 16px,
+                então 
+                <span class="texto-em">
+                    o padding aqui (1em) é 16px 
+                </span>
+            </div>
+            <div class="caixa-em-grande">
+                Minha font é 24px 
+                <div class="caixa-texto-em">
+                    o margin-top aqui (1em) do 
+                    tamanho
+                    fonte de 20px 
+                </div>
+            </div>
+        </div>
+
+        <h2>4. rem - relativo á fonte da raiz(html, body)</h2>
+
+        <div class="demo">
+            <div class="caixa-rem">
+                Meu tamanho é 1.5rem 
+                (baseado no html ou body,
+                sempre igual)
+            </div>
+        </div>
+
+        <h2>5. vh e vw - relativo ao tamanho da TELA</h2>
+        <div class="demo">
+            <div class="caixa-vw">
+                Tenho 50vw (= 50% da largura da TELA)
+            </div>
+            <div class="caixa-vh">
+                Tenho 100vh (= 100% da altura da TELA)
+            </div>
+        </div>
+    </body>
+</html>
