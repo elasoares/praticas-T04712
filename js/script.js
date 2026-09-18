@@ -218,3 +218,65 @@ console.log(temPix || temCartao);
 
 let botao = false;
 console.log(!botao);
+
+//=======================================
+
+let idade_maior = 18;
+let idade_menor = 16;
+let idade_teste_if = 63;
+let nota = 4;
+
+/* if*/
+
+    if(idade_maior >= 18){
+        console.log("Você é de maior de idade!");
+    }
+/* if / else */
+
+    if(idade_menor >= 18){
+        console.log("Venda autorizada.");
+    }else{
+        console.log("Venda proibida");
+    }
+
+
+/* if/else if/ else */
+
+    if(nota >= 7){
+        console.log("Aprovada!!!");
+
+    }else if(nota >= 5){
+        console.log("Recuperação.");
+    }else{
+        console.log("Reprovada!");
+    }
+
+//=================================
+
+    if(idade_teste_if < 12){
+        console.log("Criança");
+        
+    }else if(idade_teste_if < 18){
+        console.log("Adolescente");
+
+    }else if(idade_teste_if < 60){
+        console.log("Adulto");
+
+    }else{
+        console.log("Idoso.")
+    }
+
+
+/* if/else if/ else aninhado */
+    let temConta = false;
+    let senhaCorreta = true;
+
+    if(temConta){
+        if(senhaCorreta){
+            console.log("Login realizado!");
+        }else{
+            console.log("Senha incorreta!");
+        }
+    }else{
+        console.log("Você não está cadastro. Cadastre-se!");
+    }
