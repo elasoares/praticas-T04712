@@ -280,3 +280,117 @@ let nota = 4;
     }else{
         console.log("Você não está cadastro. Cadastre-se!");
     }
+
+
+    /* for continue */
+
+   // Ímpar = i % 2 !== 0
+   // Par =   i % 2 == 0
+
+    for(let i = 1; i <= 10; i++){
+        if(i % 2 !== 0){
+            continue;
+        }
+        console.log(i + " impar");
+    }
+
+    /* Funções */
+
+    function darBomDia(){
+       console.log("Bom dia! ☀️"); 
+    }
+
+    darBomDia();
+    darBomDia();
+
+    function saudar(nome){
+        console.log(`Olá ${nome}! Bem-vindo(a)!`);
+    }
+
+    let nome_funcao = "Elaine";
+    console.log("Valor nome " + nome_funcao);
+
+    saudar(nome_funcao);
+    saudar("Teste");
+
+
+    function somar(a, b){
+        return a + b; 
+    }
+
+    let resultado1 = somar(1, 2);
+    console.log(`A soma é: ${resultado1}`);
+
+    let resultado2 = somar(8, 3);
+    console.log(`A soma é: ${resultado2}`);
+
+    /* foreach */
+
+    let frutas_lista = ["Uva", "Abacaxi", "Laranja"];
+    frutas_lista.forEach( function(fruta){
+        console.log("Fruta: " + fruta);
+    });
+
+    let lista_preco = [5, 9, 68];
+    let total_ = 0;
+    lista_preco.forEach(function(preco){
+        /* total = total + preco; */
+        total_ += preco;
+    });
+
+    console.log("Total: R$" + total_);
+
+    /* Objetos */
+
+    let pessoa_obj = {
+        nome: "Ana",
+        idade: "28"
+
+    };
+
+    console.log(pessoa_obj.nome);
+    console.log(pessoa_obj.idade);
+
+    let campo = "nome"; 
+
+    console.log(pessoa_obj[campo]);
+   /*  console.log(pessoa_obj["idade"]); */
+   /*  console.log(pessoa_obj["nome"]); */
+
+
+   //for of percorre listas(array/vetor) | pega os VALORES dos itens.
+   //for in percorre objetos  | pega CHAVES(nomes das propriedades).
+
+   /* For in  */
+   let pessoa_objeto = {
+        nome: "Elaine",
+        idade: 25,
+        cidade: "Fortaleza"
+   };
+
+   for(let chave  in pessoa_objeto ){
+        console.log(chave + ": " + pessoa_objeto[chave]);
+   }
+
+
+   let carro_objeto = {
+        modelo: "Corolla",
+        marca: "toyota",
+        ano: 2022
+   };
+
+   for(let chave  in carro_objeto ){
+        console.log(chave + ": " + carro_objeto[chave]);
+   }
+
+
+   let aluno = {
+        nome: "Bruno",
+        curso: "Programação web",
+        nota: 9,
+        aprovado: true
+   };
+
+   for(let percorrer_campo in aluno){
+        console.log(`${percorrer_campo} --> ${aluno[percorrer_campo]}`);
+   }

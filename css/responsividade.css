@@ -1,0 +1,38 @@
+/* estilo padrão - onde o mobile first se inicia  1 até 599px*/
+body{
+    background-color: white;
+    font-size: 16px;
+}
+.icon{
+    width:50px;
+    background-color:rgb(175, 177, 64);
+    border-radius: 100%;
+}
+
+
+
+/* mobile - celular.grandes 600 - 767 */
+@media(min-width: 600px){
+    body{
+        background-color: rgb(201, 12, 12);
+        font-size: 26px;
+    }
+}
+
+/* tablet 768 - 991 */
+
+@media(min-width: 768px){
+    body{
+        background-color: rgb(34, 201, 12);
+        font-size: 52px;
+    }
+}
+
+/* notebooks */
+
+@media(min-width: 992px){
+    body{
+        background-color: rgb(169, 12, 201);
+        font-size: 86px;
+    }
+}
